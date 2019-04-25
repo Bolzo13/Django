@@ -1,0 +1,9 @@
+{% if latest_film_list %}
+    <ul>
+    {% for film in latest_film_list %}
+        <a href="./1/"><img src="{{ film.img }}" height="500px"></a>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No film are available.</p>
+{% endif %}
